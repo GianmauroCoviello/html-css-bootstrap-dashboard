@@ -18,14 +18,24 @@
 .green{
     background-color: green;
 }
+.blue{
+    background-color: blue;
+
+}
+.text-white{
+    color: white;
+}
 
 /* UTILITIES */
+header{
+    width: 100%;
+}
 
 #logo-mobile{
     width: 50px;
 }
 .side-bar{
-    width: 50px;
+    width: 75px;
     background-color: rgb(5, 4, 31);
     height: 100vh;
     background-image: url(../img/sidebar-bg.png);
@@ -34,7 +44,7 @@
 
 }
 .main-content{
-    width: 100%;
+    width: calc(100% - 75px);
     height: 100vh;
     overflow-y: auto;
 }
@@ -57,7 +67,6 @@ tr td{
     padding: 2px;
 
 }
-
 
 
 
