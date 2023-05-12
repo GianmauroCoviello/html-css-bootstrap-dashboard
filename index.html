@@ -17,45 +17,163 @@
                  
                   <form class="d-flex container-fluid" role="search">
                     <a class="navbar-brand">
-                        <img id="logo-mobile" src="./img/mobile-logo.png" alt="">
+                        <img class="logo-mobile" src="./img/mobile-logo.png" alt="">
+                        <h4 class="title-logo d-none d-md-inline-block fw-bold">boolean</h4>
+                        
                     </a>
                     <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezione di Laravel" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn border-0" type="submit"><i class="fa-solid fa-bell orange"></i></button>
                   </form>
                 </div>
               </nav>
         </header>
         <main class="d-flex">
             <div class="side-bar">
-                <div class="top-bar">
-                    <div class="container">
-                        <div class="row text-white">
+                <div class="top-sidebar d-flex">
+                    <div class="container ">
+                        <div class="row ">
+                            <div class="col">
+                                <ul class="icons text-white text-center">
+                                    <li>
+                                        <span><i class="fa-solid fa-house"></i></i></span>
+                                        
+                                    </li>
+                                    <li >
+                                        <span><i class="fa-solid fa-signal"></i></span>
+                                       
+                                        
+                                    </li>
+                                    <li>
+                                        <span><i class="fa-solid fa-signal"></i></span>
+                                        
+                                    </li>
+                                </ul>
+
+                            </div>
                             
                         </div>
                     </div>
+                    <div class="container ps-0 d-none d-md-inline-block">
+                        <div class="row ">
+                            <div class="col ">
+                                <ul class="links-icon text-white">
+                                    <li><span>Home</span></li>
+                                    <li><span>Stats</span></li>
+                                    <li><span>Signals</span></li>    
+                                </ul>
 
+                            </div>
+                                   
+                        </div>
+                        
+                    </div>           
                 </div>
-                <div class="bottom-bar">
-
-                </div>
+                
 
             </div>
 
 
+            
+
+
             <div class="main-content">
                 <div class="container-fluid blue">
-                    <div class="row text-white flex-md-row-reverse">
-                        <div class="col-12 col-sm-4 py-3">
-                            <span>Nuovo Studente</span>
-                            <i class="fa-regular fa-square-plus "></i>
+                    <div class="row text-white ">
+                        <div class="col-12 col-sm-3 order-sm-3  py-3">
+                            <span>Nuovo studente </span>
+                           
+                            <button class="btn btn-outline-light d-inline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <!-- FORM DELLA OFFCANVAS -->
+                                <form class="row g-3">
+                                    <div class="col-lg-6">
+                                        <label for="inputEmail4" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" aria-label="First name">
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <label for="inputEmail4" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" aria-label="Last name">
+                                      </div>
+                                    <div class="col-lg-6">
+                                      <label for="inputEmail4" class="form-label">Email</label>
+                                      <div class="input-group">
+                                        <div class="input-group-text">@</div>
+                                        <input type="email" class="form-control" id="inlineFormInputGroupEmail">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <label for="inputPassword4" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress" class="form-label">Indirizzo</label>
+                                      <input type="text" class="form-control" id="inputAddress">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputCity" class="form-label">Città</label>
+                                      <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                      <label for="inputState" class="form-label">Stato</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <label for="inputZip" class="form-label">CAP</label>
+                                      <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="formFile" class="form-label">Foto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                      </div>
+                                    <div class="col-12">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                          Seleziona per proseguire
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <button type="submit" class="btn btn-primary">Salva</button>
+                                      <button type="button" class="btn btn-warning">Svuota</button>
+                                    </div>
+                                  </form>
+                                
+                            </div>
+                            </div>
 
                         </div>
-                        <div class="col-12 col-sm-4 py-3">
-                            <h3>Boolean</h3>
+                        <div class="col-12 col-sm-5 order-sm-1 order-lg-1 py-3">
+                            <div class="content-badge ">
+                                <h3 class="d-inline-block">Boolean</h3>
+                                <span class="badge text-bg transparent-badge">Piano Blaze</span>   
+                            </div>
+                            <div class="content-badge  ">
+                                <span class="badge text-bg transparent-badge">3 app</span>
+                                >><span class="transparent-badge rounded-circle badge text-bg px-2 d-md-none ">
+                                    <i class="fa-solid fa-plus fa-2xs"></i>
+                                </span>
+                                <div class="d-none d-sm-block  d-sx-none">
+                                    <span class="badge text-bg transparent-badge">Boolean app mobile</span> 
+                                    <span class="badge text-bg transparent-badge ">Boolean app mobile</span> 
+                                    <span class="badge text-bg transparent-badge ">Boolean app mobile</span> 
+
+                                </div>
+                                
+                                
+                            </div>
 
 
                         </div>
-                        <div class="col-12 col-sm-4 py-3">
+                        <div class="col-12 col-sm-4 order-sm-2 py-3">
                             <p >Studenti online negli ultimi 30 minuti</p>
                             <h3>125</h3>
 
@@ -68,153 +186,154 @@
                         <div class="col-12 col-lg-8">
                             <div class="card">
                                 <div class="card-header">
-                                  Prossime Classi
+                                  <h4>Prossime classi</h4>
                                 </div>
                                 <div class="card-body">
                                     <table class="table">
                                         <thead>
                                           <tr>
-                                            <th scope="col" colspan="5">Nomi</th>
-                                            <th scope="col" class="text-end">Stato</th>
-                                            <th scope="col" class="text-end">Azioni</th>
+                                            <th scope="col"  >Nomi</th>
+                                            <td scope="col" class="d-none d-sm-block">Data inizio</td>
+                                            <td scope="col">ROI</td>
+                                            <td scope="col">Stato</td>
+                                            <td scope="col">Azioni</td>
                                             
                                           </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <th scope="col" colspan="5" >
-                                                    <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
-                                                    <span>Classe 75</span>
-                                                </th>
-                                                <td >
-                                                    <button type="button" class="btn btn-success btn-p">done</button>
-
-                                                </td>
-                                                <td>
-                                                    <i class="fa-solid fa-trash border border-secondary p-2"></i>
-                                                    <i class="fa-solid fa-pen  border border-secondary p-2"></i>
-                                                    
-                                                </td>
+                                          <tr>
+                                            <th scope="row" >
+                                                <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
+                                                <span>Classi 75</span>
                                                 
-                                                
-                                            </tr>
-                                            <tr>
-                                                <th scope="col" colspan="5" >
-                                                    <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
-                                                    <span>Classe 75</span>
-                                                </th>
-                                                <td >
-                                                    <button type="button" class="btn btn-success btn-p">done</button>
-
-                                                </td>
-                                                <td>
-                                                    <i class="fa-solid fa-trash border border-secondary p-2"></i>
-                                                    <i class="fa-solid fa-pen  border border-secondary p-2"></i>
-                                                    
-                                                    
-                                                </td>
-                                                
-                                                
-                                            </tr>
-                                            <tr>
-                                                <th scope="col" colspan="5" >
-                                                    <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
-                                                    <span>Classe 75</span>
-                                                </th>
-                                                <td >
-                                                    <button type="button" class="btn btn-success btn-p">done</button>
-
-                                                </td>
-                                                <td>
-                                                    <i class="fa-solid fa-trash border border-secondary p-2"></i>
-                                                    <i class="fa-solid fa-pen  border border-secondary p-2"></i>
-                                                </td>
-                                                
-                                                
-                                            </tr>
-                                            <tr>
-                                                <th scope="col" colspan="5" >
-                                                    <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
-                                                    <span>Classe 75</span>
-                                                </th>
-                                                <td >
-                                                    <button type="button" class="btn btn-success btn-p">done</button>
-
-                                                </td>
-                                                <td>
-                                                    <i class="fa-solid fa-trash border border-secondary p-2"></i>
-                                                    <i class="fa-solid fa-pen  border border-secondary p-2"></i>
-                                                    
-                                                </td>
-                                                
-                                                
-                                            </tr>
-                                            <tr>
-                                                <th scope="col" colspan="5" >
-                                                    <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
-                                                    <span>Classe 75</span>
-                                                </th>
-                                                <td >
-                                                    <button type="button" class="btn btn-success btn-p">done</button>
-
-                                                </td>
-                                                <td>
-                                                    <i class="fa-solid fa-trash border border-secondary p-2"></i>
-                                                    <i class="fa-solid fa-pen  border border-secondary p-2"></i>
-                                                    
-                                                </td>
-                                                
-                                                
-                                            </tr>
-                                            <tr>
-                                                <th scope="col" colspan="5" >
-                                                    <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
-                                                    <span>Classe 75</span>
-                                                </th>
-                                                <td >
-                                                    <button type="button" class="btn btn-success btn-p">done</button>
-
-                                                </td>
-                                                <td>
-                                                    <i class="fa-solid fa-trash border border-secondary p-2"></i>
-                                                    <i class="fa-solid fa-pen  border border-secondary p-2"></i>
-                                                    
-                                                </td>
-                                                
-                                                
-                                            </tr>
-                                            <tr>
-                                                <th scope="col" colspan="5" >
-                                                    <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
-                                                    <span>Classe 75</span>
-                                                </th>
-                                                <td >
-                                                    <button type="button" class="btn btn-success btn-p">done</button>
-
-                                                </td>
-                                                <td>
-                                                    <i class="fa-solid fa-trash border border-secondary p-2"></i>
-                                                    <i class="fa-solid fa-pen  border border-secondary p-2"></i>
-                                                    
-                                                </td>
-                                                
-                                                
-                                            </tr>
+                                            </th>
+                                            <td>15 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen border border-secondary p-1"></i>
+                                                <i class="fa-solid fa-trash border border-secondary p-1"></i>
+                                            </td>
                                             
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" >
+                                                <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
+                                                <span>Classi 75</span>
+                                                
+                                            </th>
+                                            <td>15 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen border border-secondary p-1"></i>
+                                                <i class="fa-solid fa-trash border border-secondary p-1"></i>
+                                            </td>
+                                            
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" >
+                                                <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
+                                                <span>Classi 75</span>
+                                                
+                                            </th>
+                                            <td>15 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen border border-secondary p-1"></i>
+                                                <i class="fa-solid fa-trash border border-secondary p-1"></i>
+                                            </td>
+                                            
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" >
+                                                <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
+                                                <span>Classi 75</span>
+                                                
+                                            </th>
+                                            <td>15 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen border border-secondary p-1"></i>
+                                                <i class="fa-solid fa-trash border border-secondary p-1"></i>
+                                            </td>
+                                            
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" >
+                                                <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
+                                                <span>Classi 75</span>
+                                                
+                                            </th>
+                                            <td>15 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen border border-secondary p-1"></i>
+                                                <i class="fa-solid fa-trash border border-secondary p-1"></i>
+                                            </td>
+                                            
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" >
+                                                <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
+                                                <span>Classi 75</span>
+                                                
+                                            </th>
+                                            <td>15 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen border border-secondary p-1"></i>
+                                                <i class="fa-solid fa-trash border border-secondary p-1"></i>
+                                            </td>
+                                            
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" >
+                                                <img class="img-logo-card" src="./img/class-avatar.jpg" alt="">
+                                                <span>Classi 75</span>
+                                                
+                                            </th>
+                                            <td>15 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen border border-secondary p-1"></i>
+                                                <i class="fa-solid fa-trash border border-secondary p-1"></i>
+                                            </td>
+                                            
+                                          </tr>
+                                          
                                         </tbody>
-                                    </table>
-                                </div>
-                               
+                                    </table>            
+                                </div>  
                             </div>
                             <div class="card mt-4">
                                 <div class="card-header">
-                                  <h3>F.A.Q</h3>
+                                  <h4>F.A.Q</h4>
                                 </div>
                                 <div class="accordion accordion-flush" id="accordionFlushExample">
                                     <div class="accordion-item">
                                       <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                          Accordion Item #1
+                                          Come aggiungere un nuovo utente?
                                         </button>
                                       </h2>
                                       <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -224,7 +343,7 @@
                                     <div class="accordion-item">
                                       <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                          Accordion Item #2
+                                            Come posso accedere alle informazioni del mio account?
                                         </button>
                                       </h2>
                                       <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -234,7 +353,7 @@
                                     <div class="accordion-item">
                                       <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                          Accordion Item #3
+                                            Posso usare questa dashboard da mobile?
                                         </button>
                                       </h2>
                                       <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -245,20 +364,36 @@
                             </div>    
                         </div>
                         <div class="col-12 col-lg-4">
-                            <div class="card mb-3">
+                            <div class="card mb-3 pb-2">
                                 <div class="card-header">
-                                  <h3>Todo</h3>
+                                  <h4>Todo</h4>
                                 </div>
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">An item</li>
-                                  <li class="list-group-item">A second item</li>
-                                  <li class="list-group-item">A third item</li>
-                                </ul>
+                                <div class="card m-3">
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item"><input type="checkbox" name="" id=""> kickoff nuovi classi</li>
+                                      <li class="list-group-item"><input type="checkbox" name="" id=""> Lezione su Bootstrap 5 in classe #75</li>
+                                      <li class="list-group-item"><input type="checkbox" name="" id=""> Controllare username github utenti</li>
+                                    </ul>
+                                </div>
+                                
                             </div>
+
                             <div class="card">
-                                <img src="./img/stats.jpeg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="card m-3">
+                                    <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Utenti attivi</h5>
+                                      <p class="card-text">Lista degli utenti attivi in piattaforma nell' ultimo mese.</p> 
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">Gennaio: 1200</li>
+                                      <li class="list-group-item">Febraio: 800</li>
+                                      <li class="list-group-item">Marzo:1500</li>
+                                    </ul>
+                                    <div class="card-body">
+                                      <a href="#" class="card-link">Visualizza report approfondito</a>
+                                      
+                                    </div>
                                 </div>
                             </div>
                             
