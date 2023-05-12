@@ -30,6 +30,11 @@
 .transparent-badge{
     background-color: rgba(21, 21, 105, 120);
 }
+.gray{
+    background-color: rgba(229,229,229,255);
+
+}
+
 
 /* UTILITIES */
 
